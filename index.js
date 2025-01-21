@@ -2,19 +2,22 @@ const express = require("express");
 const app = express();
 
 const store = {
-  name: "Mystic Market",
-  open: true,
-  description: "A one-stop shop for adventurers seeking rare and magical provisions. From healing potions to enchanted spices, we've got everything you need to survive and thrive in your quest.",
-  hours: {
-    monday: "8:00 AM - 8:00 PM",
-    tuesday: "8:00 AM - 8:00 PM",
-    wednesday: "8:00 AM - 8:00 PM",
-    thursday: "8:00 AM - 8:00 PM",
-    friday: "8:00 AM - 10:00 PM",
-    saturday: "10:00 AM - 10:00 PM",
-    sunday: "10:00 AM - 6:00 PM"
+  info: {
+
+    name: "Mystic Market",
+    open: true,
+    description: "A one-stop shop for adventurers seeking rare and magical provisions. From healing potions to enchanted spices, we've got everything you need to survive and thrive in your quest.",
+    hours: {
+      monday: "8:00 AM - 8:00 PM",
+      tuesday: "8:00 AM - 8:00 PM",
+      wednesday: "8:00 AM - 8:00 PM",
+      thursday: "8:00 AM - 8:00 PM",
+      friday: "8:00 AM - 10:00 PM",
+      saturday: "10:00 AM - 10:00 PM",
+      sunday: "10:00 AM - 6:00 PM"
+    },
+    image: "store.jpg"
   },
-  image: "store.jpg",
   items: [
     {
       name: "Healing Potion",
