@@ -19,22 +19,22 @@ const store = {
     {
       name: "Healing Potion",
       cost: 50,
-      image: "https://example.com/images/healing-potion.jpg"
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS15HkNNlZmtldJJyY8ZyLt_6C2ljExDEfh1pwAwLcbgdLLOY8e-FOGn_huYW6kWAgOlP4&usqp=CAU"
     },
     {
       name: "Mana Elixir",
       cost: 75,
-      image: "https://example.com/images/mana-elixir.jpg"
+      image: "https://www.shutterstock.com/image-vector/pixel-art-potion-retro-8bit-260nw-2358757125.jpg"
     },
     {
       name: "Elven Bread",
       cost: 25,
-      image: "https://example.com/images/elven-bread.jpg"
+      image: "https://www.shutterstock.com/image-vector/pixel-art-illustration-bread-pixelated-600nw-2467440875.jpg"
     },
     {
-      name: "Phoenix Feather Spice",
+      name: "Phoenix Feather",
       cost: 200,
-      image: "https://example.com/images/phoenix-spice.jpg"
+      image: "https://www.shutterstock.com/image-vector/pixel-art-feather-pen-icon-260nw-2367380105.jpg"
     }
   ]
 };
