@@ -3,20 +3,19 @@ const app = express();
 
 const store = {
   info: {
-
     name: "Mystic Market",
     open: true,
     description: "A one-stop shop for adventurers seeking rare and magical provisions. From healing potions to enchanted spices, we've got everything you need to survive and thrive in your quest.",
-    hours: {
-      monday: "8:00 AM - 8:00 PM",
-      tuesday: "8:00 AM - 8:00 PM",
-      wednesday: "8:00 AM - 8:00 PM",
-      thursday: "8:00 AM - 8:00 PM",
-      friday: "8:00 AM - 10:00 PM",
-      saturday: "10:00 AM - 10:00 PM",
-      sunday: "10:00 AM - 6:00 PM"
-    },
-    image: "store.jpg"
+    hours: [
+      { day: "Monday", hours: "8:00 AM - 8:00 PM" },
+      { day: "Tuesday", hours: "8:00 AM - 8:00 PM" },
+      { day: "Wednesday", hours: "8:00 AM - 8:00 PM" },
+      { day: "Thursday", hours: "8:00 AM - 8:00 PM" },
+      { day: "Friday", hours: "8:00 AM - 10:00 PM" },
+      { day: "Saturday", hours: "10:00 AM - 10:00 PM" },
+      { day: "Sunday", hours: "10:00 AM - 6:00 PM" },
+    ],
+    image: "store.jpg",
   },
   items: [
     {
@@ -51,11 +50,17 @@ const store = {
 // Set the view engine to EJS
 
 
-// Set up the router for / to send back home.ejs
-
-
-// Set up the router for /menu to send back menu.ejs
+// Set up the router for / to send back home.ejs with the info attribute
 
 
 
-app.listen();
+
+// Set up the router for /menu to send back menu.ejs with the entire object (so that you can access the array)
+
+
+
+
+
+app.listen(3000, ()=>{
+  console.log("Server started")
+});
